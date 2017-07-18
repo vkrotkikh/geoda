@@ -4462,9 +4462,9 @@ h1 {
 }
 
 h2 {
-  font-size: 3.56rem;
+  font-size: 31px;
   line-height: 110%;
-  margin: 1.78rem 0 1.424rem 0;
+  margin: 15.5px 0 12.4px 0;
 }
 
 h3 {
@@ -7527,12 +7527,35 @@ nav ul {
 }
 
 nav ul a {
-  font-family: "OpenSansHebrewBold", sans-serif;
   font-size: 18px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 1px;
+  height: 20px;
+  margin-top: -10px;
+  background-color: #6D6E71;
+}
+
+nav ul li:last-child:before, nav ul li:nth-last-child(1):before {
+  display: none;
 }
 
 nav ul .btn, nav ul .btn-large {
   font-family: "OpenSansHebrewRegular", sans-serif;
+}
+
+nav ul.bold {
+  font-family: "OpenSansHebrewBold", sans-serif;
 }
 
 .brand-logo {
@@ -7567,14 +7590,45 @@ nav ul .btn, nav ul .btn-large {
   box-shadow: -4px 4px 0 rgba(1, 148, 190, 0.2);
 }
 
+.btn.-lg, .-lg.btn-large {
+  padding: 24px 63px;
+  height: auto;
+  line-height: 1;
+}
+
+.card-home {
+  width: 100%;
+  padding: 35px 50px;
+}
+
+.card-home .icon-wrapper {
+  height: 90px;
+}
+
+.card-home h2 {
+  margin-top: 0;
+}
+
+.card-home .caption {
+  margin: 0;
+  font-size: 20px;
+}
+
 html {
   font-family: "OpenSansHebrewRegular", sans-serif;
   color: #6d6e71;
 }
 
+h3 {
+  font-family: 'Lato', sans-serif;
+}
+
 .container {
-  max-width: 1310px;
   width: 100%;
+}
+
+.container.-wide {
+  max-width: 1550px;
 }
 
 .flex {
@@ -7623,10 +7677,15 @@ html {
   right: 0;
 }
 
+[dir="rtl"] .lined.-center:after {
+  right: auto;
+  left: 50%;
+}
+
 .lined {
   position: relative;
   padding-bottom: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
 }
 
 .lined:after {
@@ -7635,6 +7694,20 @@ html {
   position: absolute;
   bottom: 0;
   left: 0;
+  width: 87px;
+  height: 5px;
+  background-color: rgba(1, 148, 190, 0.2);
+}
+
+.lined.-center:after {
+  left: 50%;
+  margin-left: -44px;
+}
+
+.shadowed {
+  border-radius: 25px;
+  -webkit-box-shadow: 0 0 30px rgba(1, 148, 190, 0.5);
+  box-shadow: 0 0 30px rgba(1, 148, 190, 0.5);
 }
 
 .font-custom {
@@ -7719,12 +7792,85 @@ h1 {
   margin: 0;
 }
 
-.section-simple .content-wrapper p {
+.section-simple .content-wrapper .description {
+  margin: 0;
   font-size: 20px;
+  max-width: 520px;
+}
+
+.section-simple .content-wrapper .btn, .section-simple .content-wrapper .btn-large {
+  -webkit-flex-basis: 225px;
+  -ms-flex-preferred-size: 225px;
+  flex-basis: 225px;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  white-space: nowrap;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
 }
 
 .section-simple .img-wrapper {
   padding: 65px 155px 85px 75px;
+}
+
+.section-home-categories {
+  padding-bottom: 35px;
+}
+
+.section-home-categories .icon-wrapper img {
+  height: 80px;
+}
+
+.section-home-categories h2 {
+  margin-top: 0;
+}
+
+.section-home-categories .content-wrapper {
+  max-width: 450px;
+}
+
+.section-home-categories p {
+  font-size: 20px;
+}
+
+.section-home-categories .link {
+  color: #28cff9;
+  font-size: 22px;
+  line-height: 26px;
+  text-decoration: underline;
+}
+
+.section-home-categories .link:hover {
+  text-decoration: none;
+}
+
+.home-category {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.home-category.-r {
+  padding-right: 150px;
+}
+
+.section-home-card {
+  padding: 50px 0;
+}
+
+.section-home-card .card-home {
+  max-width: 610px;
+  margin: 0 15px;
+  height: 318px;
+}
+
+.section-home-card .card-home.-mr0 {
+  margin-right: 0;
+}
+
+.section-home-card .card-home.-ml0 {
+  margin-left: 0;
 }
 
 /*# sourceMappingURL=all.css.map */
