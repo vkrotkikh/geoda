@@ -1,0 +1,158 @@
+<html lang="heb" dir="rtl">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="all.css">
+	<title>Contacts</title>
+</head>
+<body>
+	<header class="header">
+		<nav>
+			<div class="container">
+				<div class="nav-wrapper">
+					<a href="/" class="brand-logo">
+						<span class="brand-logo-text">Geoda</span>
+						<img src="images/logo.svg" alt="">
+					</a>
+					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+					<ul class="hide-on-med-and-down left">
+						<li><a href="javascript:void(0);">גאו-אינפורמטיקה</a></li>
+						<li><a href="javascript:void(0);">תשתיות תכנון ומקרקעין</a></li>
+						<li><a href="javascript:void(0);">מחשוב מסמכים</a></li>
+						<li><a href="javascript:void(0);">מכון בקרה</a></li>
+						<li><a href="javascript:void(0);" class="font-custom">Geodata</a></li>
+					</ul>
+					<ul class="hide-on-med-and-down right">
+						<li><a href="javascript:void(0);">לקוחות</a></li>
+						<li><a href="javascript:void(0);">אודות</a></li>
+						<li><a href="javascript:void(0);">דרושים</a></li>
+						<li><a href="javascript:void(0);" class="waves-effect waves-light btn -primary">צרו קשר</a></li>
+					</ul>
+					<ul class="side-nav" id="mobile-demo">
+						<li><a href="javascript:void(0);">Sass</a></li>
+						<li><a href="javascript:void(0);">Components</a></li>
+						<li><a href="javascript:void(0);">Javascript</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</nav>
+	</header>
+	<div class="center-align header-bottom">
+		<div class="img-wrapper">
+			<img src="images/img-contacts.svg" alt="" width="660">
+		</div>
+		<h1>צרו קשר</h1>
+	</div>
+	<div class="contacts">
+		<div class="contacts-map" id="googleMap"></div>
+		<div class="container">
+			<div class="contacts-info_box">
+				<div class="contacts-info_address contacts-info_item">
+					<div class="contacts-info_address_img_wrapper">
+						<img src="images/ico-social_blue.svg" alt="">
+					</div>
+					<div class="contacts-info_address_text">
+						<span class="contacts-info_address_name">רח' המלאכה 3, בית ויקטוריה</span>
+						<span class="contacts-info_address_name">ת.ד.51443, תל אביב-יפו 67215</span>
+					</div>
+				</div>
+				<div class="contacts-info_phones contacts-info_item">
+					<span class="contacts-info_phone">טלפון: 073-295-5500 </span>	
+					<span class="contacts-info_phone">פקס: 073-2955001</span>	
+				</div>
+				<div class="contacts-info_item">
+					<a href="javascript:void(0);" class="contacts-info_email">info@geoda.co.il</a>
+				</div>
+			</div>
+			<div class="contacts-form_box">
+				<form action="" class="form -icons">
+					<div class="row">
+				        <div class="input-field col s6">
+				          <input id="contact_email" type="email" class="validate">
+				          <label for="contact_email" data-error="שדה חסר">כתובת מייל</label>
+				          <img src="images/ico-mail_blue.svg" alt="">
+				        </div>
+						<div class="input-field col s6">
+				          <input id="contact_fullname" type="text" class="validate">
+				          <label for="contact_fullname">שם מלא</label>
+				          <img src='images/ico-person.svg' alt="">
+				        </div>
+					</div>
+					<div class="row">
+						<div class="input-field col s6 offset-s6">
+				          <input id="contact_phone" type="tel" class="validate">
+				          <label for="contact_phone">טלפון</label>
+				          <img src='images/ico-phone.svg' alt="">
+				        </div>
+					</div>
+					<div class="row">
+				        <div class="input-field col s6">
+				          <input id="contact_role" type="text" class="validate">
+				          <label for="contact_role">תפקיד <span> (לא חובה)</span></label>
+				          <img src="images/ico-suitcase.svg" alt="">
+				        </div>
+						<div class="input-field col s6">
+				          <input id="contact_org-name" type="text" class="validate">
+				          <label for="contact_org-name">שם הארגון <span>(לא חובה)</span></label>
+				          <img src='images/ico-building.svg' alt="">
+				        </div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+						    <select>
+						      <option value="" disabled selected>שירות</option>
+						      <option value="1">חטיבת גאו-אינפורמטיקה</option>
+						      <option value="2">חטיבת תשתיות תכנון ומקרקעין</option>
+						      <option value="3">חטיבת מחשוב מסמכים</option>
+						    </select>
+						    <img src="images/ico-headphones.svg" alt="">
+						  </div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+				          <textarea id="contacts_text" class="materialize-textarea validate"></textarea>
+				          <label for="contacts_text">תוכן ההודעה</label>
+				          <img src='images/ico-pencil.svg' alt="">
+				        </div>
+					</div>
+					<div class="row">
+						<div class="col s12 left-align -submit">
+							<input type="submit" value="שליחה" class="waves-effect waves-light btn -primary btn-xl">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-contacts">
+				<span>רח' המלאכה 3, בית ויקטוריה, ת.ד.51443, תל אביב-יפו 67215</span>
+				<span>טלפון: 073-295-5500 | פקס:  073-2955001</span>
+				<span class="footer-copyright">גאודע © כל הזכויות שמורות 2016</span>
+			</div>
+			<div class="social-list footer-social_list">
+				<li><a href="javascript:void(0);"><img src="images/ico-social.svg" alt=""></a></li>
+				<li><a href="javascript:void(0);"><img src="images/ico-linkedin.svg" alt=""></a></li>
+				<li><a href="javascript:void(0);"><img src="images/ico-mail.svg" alt=""></a></li>
+			</div>
+			<div class="footer-certificate">
+				<img src="images/logo-sertificate_orange.svg" alt="">
+				<img src="images/logo-sertificate_blue.svg" alt="">
+			</div>
+			<div class="footer-designed">
+				<img src="images/designed-by_logo.svg" alt="" class="footer-designed_logo">
+				<span class="footer-designed_name">Design by</span>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery/jquery-3.2.1.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABomFL6iueOhvv6fFeWleNfMzcSmVf8qY"></script>
+	<script src="js/materialize/materialize.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

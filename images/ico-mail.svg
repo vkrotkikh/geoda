@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 46 55" style="enable-background:new 0 0 46 55;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.3;fill:#FFFFFF;}
+	.st1{opacity:0.5;fill:#FFFFFF;}
+	.st2{opacity:0.9;fill:#FFFFFF;}
+	.st3{fill:#6D6E71;}
+	.st4{fill:none;}
+	.st5{fill:#6D6E71;stroke:#0000FF;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M1,19.7c0-1.4,1.1-2.5,2.5-2.5h16.2c1.4,0,2.5,1.1,2.5,2.5v30.8c0,1.4-1.1,2.5-2.5,2.5H3.5
+	C2.1,53,1,51.8,1,50.5"/>
+<path class="st1" d="M43.5,30.2H26c-1,0-1.9-0.8-1.9-1.9V11.6c0-1,0.8-1.9,1.9-1.9h17.4c1,0,1.9,0.8,1.9,1.9v16.7
+	C45.3,29.3,44.5,30.2,43.5,30.2z"/>
+<path class="st2" d="M37.6,48.5H10.8c-2.2,0-4-1.8-4-4V17.7c0-2.2,1.8-4,4-4h26.8c2.2,0,4,1.8,4,4v26.8
+	C41.6,46.7,39.8,48.5,37.6,48.5z"/>
+<g>
+	<g>
+		<polygon class="st3" points="24.2,31.6 17,24.5 31.3,24.5 		"/>
+		<path class="st3" d="M33.7,25.9v10.3c0,0.8-0.7,1.4-1.4,1.4H16c-0.8,0-1.4-0.7-1.4-1.4V25.9c0-0.7,0.4-1.2,1-1.4
+			c0,0,0.1,0.1,0.1,0.1l7.8,7.8c0.2,0.2,0.4,0.3,0.7,0.3c0.2,0,0.5-0.1,0.7-0.3l7.8-7.8c0,0,0.1-0.1,0.1-0.1
+			C33.3,24.7,33.7,25.3,33.7,25.9z"/>
+	</g>
+</g>
+<polyline class="st4" points="45.3,0.1 45.3,54.9 1,54.9 "/>
+<path class="st5" d="M45.3,19.5"/>
+</svg>

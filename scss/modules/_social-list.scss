@@ -1,0 +1,14 @@
+.social-list{
+	& img {
+		width: 46px;
+		height: 55px;
+
+	}
+	& li {
+		margin-left: 20px;
+		display: inline-block;
+		&:last-child{
+			margin-left: 0;
+		}
+	}
+}

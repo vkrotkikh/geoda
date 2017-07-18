@@ -45,3 +45,16 @@ nav {
 	font-family: $font-ultralight;
 	vertical-align: middle;
 }
+.header{
+	&-bottom{
+		& h1 {
+			margin: 40px 0;
+		}
+		& .img-wrapper{
+			padding: 0 100px;
+		}
+		& img {
+			max-width: 100%
+		}
+	}
+}

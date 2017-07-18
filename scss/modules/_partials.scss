@@ -4,7 +4,8 @@ html {
 }
 
 .container {
-	max-width: 1310px;
+	max-width: 1410px;
+	padding:  0 65px;
 	width: 100%;
 }
 
@@ -142,5 +143,10 @@ h1 {
 
 	.img-wrapper {
 		padding: 65px 155px 85px 75px;
+	}
+}
+@media screen and (max-width: 500px){
+	.container{
+		padding: 0 15px;
 	}
 }

@@ -13,3 +13,12 @@
 @import 'modules/carousel';
 @import 'modules/modal';
 @import 'modules/partials';
+@import 'modules/footer';
+@import 'modules/social-list';
+@import 'modules/contacts';
+@import 'modules/form';
+
+
+* , *:focus , *:active , *:hover{
+	outline: none !important;
+}
