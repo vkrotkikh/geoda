@@ -5,6 +5,7 @@ nav {
 	.brand-logo {
 		display: block;
 		right: 15px;
+		color: $navbar-font-color;
 	}
 
 	.nav-wrapper {
@@ -16,6 +17,7 @@ nav {
 
 		a {
 			font-size: 18px;
+			color: $navbar-font-color;
 		}
 
 		li {
@@ -30,7 +32,7 @@ nav {
 				width: 1px;
 				height: 20px;
 				margin-top: -10px;
-				background-color: #6D6E71;
+				background-color: #6d6e71;
 			}
 
 			&:last-child,
@@ -53,8 +55,8 @@ nav {
 
 .brand-logo {
 	line-height: 1;
-	height: 40px;
-	top: 6px;
+	height: 35px;
+	top: 9px;
 	margin: auto;
 
 	img {
@@ -71,16 +73,17 @@ nav {
 	font-family: $font-ultralight;
 	vertical-align: middle;
 }
-.header{
-	&-bottom{
+
+.header {
+	&-bottom {
 		& h1 {
 			margin: 40px 0;
 		}
-		& .img-wrapper{
+		& .img-wrapper {
 			padding: 0 100px;
 		}
 		& img {
-			max-width: 100%
+			max-width: 100%;
 		}
 	}
 }

@@ -7516,6 +7516,7 @@ nav {
 nav .brand-logo {
   display: block;
   right: 15px;
+  color: #6d6e71;
 }
 
 nav .nav-wrapper {
@@ -7528,6 +7529,7 @@ nav ul {
 
 nav ul a {
   font-size: 18px;
+  color: #6d6e71;
 }
 
 nav ul li {
@@ -7543,7 +7545,7 @@ nav ul li:before {
   width: 1px;
   height: 20px;
   margin-top: -10px;
-  background-color: #6D6E71;
+  background-color: #6d6e71;
 }
 
 nav ul li:last-child:before, nav ul li:nth-last-child(1):before {
@@ -7560,8 +7562,8 @@ nav ul.bold {
 
 .brand-logo {
   line-height: 1;
-  height: 40px;
-  top: 6px;
+  height: 35px;
+  top: 9px;
   margin: auto;
 }
 
@@ -7596,10 +7598,10 @@ nav ul.bold {
 }
 
 .btn.-primary, .-primary.btn-large {
-  background-color: #ee6e73;
+  background-color: #0194be;
   color: #fff;
-  -webkit-box-shadow: -4px 4px 0 rgba(238, 110, 115, 0.2);
-  box-shadow: -4px 4px 0 rgba(238, 110, 115, 0.2);
+  -webkit-box-shadow: -4px 4px 0 rgba(1, 148, 190, 0.2);
+  box-shadow: -4px 4px 0 rgba(1, 148, 190, 0.2);
 }
 
 .btn.-lg, .-lg.btn-large {
@@ -7711,7 +7713,7 @@ h3 {
   left: 0;
   width: 87px;
   height: 5px;
-  background-color: rgba(238, 110, 115, 0.2);
+  background-color: rgba(1, 148, 190, 0.2);
 }
 
 .lined.-center:after {
@@ -7721,8 +7723,8 @@ h3 {
 
 .shadowed {
   border-radius: 25px;
-  -webkit-box-shadow: 0 0 30px rgba(238, 110, 115, 0.5);
-  box-shadow: 0 0 30px rgba(238, 110, 115, 0.5);
+  -webkit-box-shadow: 0 0 30px rgba(1, 148, 190, 0.5);
+  box-shadow: 0 0 30px rgba(1, 148, 190, 0.5);
 }
 
 .font-custom {
@@ -7772,7 +7774,7 @@ h1 {
 }
 
 .bordered {
-  border-color: #ee6e73;
+  border-color: #0194be;
 }
 
 .bordered.-top {
@@ -8109,7 +8111,7 @@ h1 {
 
 .contacts-info_email {
   font-size: 22px;
-  color: #039be5;
+  color: #28cff9;
   line-height: 30px;
   text-decoration: underline;
 }
@@ -8223,7 +8225,8 @@ h1 {
   margin: 0 -17px;
 }
 
-.form .col.s6, .form .col.s12 {
+.form .col.s6,
+.form .col.s12 {
   padding: 0px 17px;
 }
 
@@ -8238,7 +8241,8 @@ h1 {
   transform: translateY(-50%);
 }
 
-.form input, .form textarea {
+.form input,
+.form textarea {
   font-size: 22px !important;
   max-width: 100%;
   width: 100%;
@@ -8267,7 +8271,7 @@ h1 {
 }
 
 .form .input-field label span {
-  color: #A4A4A5;
+  color: #a4a4a5;
 }
 
 [dir="rtl"] .form .input-field textarea {
@@ -8303,7 +8307,7 @@ h1 {
 
 [dir="rtl"] .form .select-wrapper .dropdown-content li span {
   padding: 16px;
-  color: #6D6E71;
+  color: #6d6e71;
   font-size: 22px;
 }
 
@@ -8311,14 +8315,27 @@ h1 {
   background: #f2fafc;
 }
 
-[dir="rtl"] input:not([type]) + label:after, [dir="rtl"] input[type=text]:not(.browser-default) + label:after, [dir="rtl"] input[type=password]:not(.browser-default) + label:after, [dir="rtl"] input[type=email]:not(.browser-default) + label:after, [dir="rtl"] input[type=url]:not(.browser-default) + label:after, [dir="rtl"] input[type=time]:not(.browser-default) + label:after, [dir="rtl"] input[type=date]:not(.browser-default) + label:after, [dir="rtl"] input[type=datetime]:not(.browser-default) + label:after, [dir="rtl"] input[type=datetime-local]:not(.browser-default) + label:after, [dir="rtl"] input[type=tel]:not(.browser-default) + label:after, [dir="rtl"] input[type=number]:not(.browser-default) + label:after, [dir="rtl"] input[type=search]:not(.browser-default) + label:after, [dir="rtl"] textarea.materialize-textarea + label:after {
+[dir="rtl"] input:not([type]) + label:after,
+[dir="rtl"] input[type=text]:not(.browser-default) + label:after,
+[dir="rtl"] input[type=password]:not(.browser-default) + label:after,
+[dir="rtl"] input[type=email]:not(.browser-default) + label:after,
+[dir="rtl"] input[type=url]:not(.browser-default) + label:after,
+[dir="rtl"] input[type=time]:not(.browser-default) + label:after,
+[dir="rtl"] input[type=date]:not(.browser-default) + label:after,
+[dir="rtl"] input[type=datetime]:not(.browser-default) + label:after,
+[dir="rtl"] input[type=datetime-local]:not(.browser-default) + label:after,
+[dir="rtl"] input[type=tel]:not(.browser-default) + label:after,
+[dir="rtl"] input[type=number]:not(.browser-default) + label:after,
+[dir="rtl"] input[type=search]:not(.browser-default) + label:after,
+[dir="rtl"] textarea.materialize-textarea + label:after {
   right: 65px;
   top: 75px;
   font-size: 18px;
 }
 
 @media screen and (max-width: 768px) {
-  .form .col.s6, .form .col.s12 {
+  .form .col.s6,
+  .form .col.s12 {
     width: 100%;
     margin-left: 0;
   }
@@ -8329,7 +8346,10 @@ h1 {
   }
 }
 
-*, *:focus, *:active, *:hover {
+*,
+*:focus,
+*:active,
+*:hover {
   outline: none !important;
 }
 
