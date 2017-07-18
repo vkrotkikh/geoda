@@ -1,0 +1,47 @@
+nav {
+	background-color: transparent;
+	box-shadow: none;
+
+	.brand-logo {
+		display: block;
+		right: 15px;
+	}
+
+	.nav-wrapper {
+		padding-right: 120px;
+	}
+
+	ul {
+		padding: 0;
+
+		a {
+			font-family: $font-bold;
+			font-size: 18px;
+		}
+
+		.btn {
+			font-family: $font-reg;
+		}
+	}
+}
+
+.brand-logo {
+	line-height: 1;
+	height: 40px;
+	top: 6px;
+	margin: auto;
+
+	img {
+		display: inline-block;
+		height: 36px;
+		vertical-align: middle;
+	}
+}
+
+.brand-logo-text {
+	display: inline-block;
+	font-size: 22px;
+	line-height: 1;
+	font-family: $font-ultralight;
+	vertical-align: middle;
+}
