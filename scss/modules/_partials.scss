@@ -8,12 +8,10 @@ h3 {
 }
 
 .container {
-<<<<<<< HEAD
-	max-width: 1410px;
-	padding:  0 65px;
-=======
->>>>>>> origin/master
+	max-width: 1310px;
 	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
 
 	&.-wide {
 		max-width: 1550px;
@@ -187,11 +185,6 @@ h1 {
 		padding: 65px 155px 85px 75px;
 	}
 }
-<<<<<<< HEAD
-@media screen and (max-width: 500px){
-	.container{
-		padding: 0 15px;
-=======
 
 .section-home-categories {
 	padding-bottom: 35px;
@@ -245,6 +238,11 @@ h1 {
 
 		&.-mr0 {margin-right: 0;}
 		&.-ml0 {margin-left: 0;}
->>>>>>> origin/master
+	}
+}
+
+@media screen and (max-width: 500px){
+	.container {
+		padding: 0 15px;
 	}
 }
