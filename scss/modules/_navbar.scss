@@ -15,12 +15,38 @@ nav {
 		padding: 0;
 
 		a {
-			font-family: $font-bold;
 			font-size: 18px;
+		}
+
+		li {
+			position: relative;
+
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 0;
+				width: 1px;
+				height: 20px;
+				margin-top: -10px;
+				background-color: #6D6E71;
+			}
+
+			&:last-child,
+			&:nth-last-child(1) {
+				&:before {
+					display: none;
+				}
+			}
 		}
 
 		.btn {
 			font-family: $font-reg;
+		}
+
+		&.bold {
+			font-family: $font-bold;
 		}
 	}
 }

@@ -4,7 +4,12 @@
 	&.-primary {
 		background-color: $primary-color;
 		color: #fff;
-
 		box-shadow: -4px 4px 0 rgba($primary-color, .2);
+	}
+
+	&.-lg {
+		padding: 24px 63px;
+		height: auto;
+		line-height: 1;
 	}
 }
