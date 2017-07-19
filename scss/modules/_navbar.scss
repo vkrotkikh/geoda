@@ -18,6 +18,12 @@ nav {
 		a {
 			font-size: 18px;
 			color: $navbar-font-color;
+			transition: all .2s;
+
+			&:hover {
+				background-color: transparent;
+				color: $primary-color;
+			}
 		}
 
 		li {
@@ -36,7 +42,7 @@ nav {
 			}
 
 			&:last-child,
-			&:nth-last-child(1) {
+			&:nth-last-child(2) {
 				&:before {
 					display: none;
 				}
@@ -72,4 +78,53 @@ nav {
 	line-height: 1;
 	font-family: $font-ultralight;
 	vertical-align: middle;
+}
+
+.side-nav {
+	li {
+		float: none !important;
+	}
+}
+
+@media (max-width: 1300px) {
+	nav {
+		ul {
+			a {
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	nav {
+		height: auto;
+		position: relative;
+		// position: fixed;
+		// z-index: 1;
+		// top: 0;
+		// left: 0;
+		// right: 0;
+
+		.brand-logo {
+			left: auto;
+			right: 0;
+			transform: translate(0, 0);
+		}
+
+		a.button-collapse {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 142px;
+			height: 142px;
+			text-align: center;
+
+			i {
+				height: auto;
+				font-size: 44px;
+				line-height: 142px;
+			}
+		}
+	}
 }

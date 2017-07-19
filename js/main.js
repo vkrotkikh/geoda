@@ -1,6 +1,8 @@
 (function($) {
     $(document).ready(function() {
-        $(".button-collapse").sideNav();
+		$(".button-collapse").sideNav();
+		
+		slickInit();
         ////// google maps
 
         // https://snazzymaps.com/editor/customize/25
@@ -115,8 +117,22 @@
         //// materialize select
 
         $('select').material_select();
-        $('#modal_worker_1').modal();
-    });
+		$('#modal_worker_1').modal();
+	});
+	
+	function slickInit() {
+        var crslFw = $('.carousel-fullwidth');
+        if (crslFw.length > 0) {
+            $('.carousel-fullwidth').slick({
+                dots: true,
+                infinite: true,
+                arrows: true,
+                speed: 300,
+                slidesToShow: 1,
+                rtl: true
+            });
+        }
+	}
 
 
 })(jQuery);
