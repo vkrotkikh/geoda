@@ -37,6 +37,9 @@
 		box-shadow: 0 5px 15px -5px rgba($primary-color, .5);
 		margin-bottom: 20px;
 	}
+	& .slick-prev, .slick-next{
+		padding-bottom: 106px;
+	} 
 }
 
 .slick-prev,

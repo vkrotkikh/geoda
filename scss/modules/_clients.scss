@@ -1,0 +1,38 @@
+.clients{
+	& .row{
+	    display: flex;
+		flex-wrap: wrap;
+    	align-items: center;
+	}
+	&-main_title{
+		margin: 0;
+		margin-top: 50px;
+    	margin-bottom: 35px;
+	}
+	&-item{
+		text-align: center;
+		margin-bottom: 35px;
+	}
+	&-img{
+		min-height: 183px;
+	    display: flex;
+	    justify-content: center;
+    	align-items: center;
+		& img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	&-title{
+		font-size: 18px;
+		text-align: center;
+		display: block;
+		color: #6d6e71;
+		font-family: 'OpenSansHebrewBold';
+	}
+}
+.section-carousel{
+	&.-clients{
+
+	}
+}
