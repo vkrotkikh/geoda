@@ -60,7 +60,12 @@
 			font-size: 22px;
 			color: $link-color;
 			line-height: 30px;
+				transition: all .35s;
 			text-decoration: underline;
+			&:hover{
+				color: darken($primary-color , 5%);
+				transition: all .35s;
+			}
 		}
 	}
 	&-form{

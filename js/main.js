@@ -115,7 +115,9 @@
         //// materialize select
 
         $('select').material_select();
-        $('#modal_worker_1').modal();
+        $('#modal_worker_1').modal({
+        	dismissible: true,
+        });
     });
 
 
