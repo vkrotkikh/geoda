@@ -1,7 +1,7 @@
 .footer{
 	background: #6d6e71;
 	& .container{
-		padding: 26px 0;
+		padding: 26px 15px;
 		min-height: 145px;
 		display: flex;
 		align-items: center;
@@ -36,7 +36,7 @@
 	&-contacts{
 		border-left: 1px solid #dbdbdd;
 		color: #fff;
-		padding-left: 65px;
+		padding-left: 50px;
 		& span{
 			display: block;
 			font-size: 20px;
@@ -54,13 +54,6 @@
 }
 @media screen and (max-width: 1400px){
 	.footer{
-		& .container{
-			padding: 26px 0;
-			min-height: 145px;
-			display: flex;
-			align-items: center;
-		    justify-content: space-between;
-		}
 		&-designed{
 			margin-right: 40px;
 
@@ -115,5 +108,53 @@
 	}
 }
 @media screen and (max-width: 992px){
+	.footer{
+		& .container{
+			padding: 40px 65px;
+		}
+		&-designed{
+			margin-right: 20px;
+			margin-top: 20px;
+		}
+	}
+}
+@media screen and (max-width: 600px){
+	.footer{
+		&-contaccts{
 
+		}
+		&-designed{
+			display: block;
+			margin-right: 0;
+		}
+		&-certificate{
+			display: block;
+			margin-top: 10px;
+		}
+		&-social_list{
+			margin-left: 0;
+		}
+	}
+}
+@media screen and (max-width: 500px){
+	.footer{
+		& .container{
+			padding: 20px 15px;
+		}
+		&-designed{
+			&_name{
+				font-size: 18px;
+			}
+		}
+		&-copyright{
+			font-size: 16px;
+		}
+		&-contacts{ 
+			& span{
+				font-size: 18px;
+			}
+			padding-bottom: 20px;
+			margin-bottom: 20px;
+		}
+	}
 }

@@ -240,7 +240,11 @@ h1 {
 		&.-ml0 {margin-left: 0;}
 	}
 }
-
+@media screen and (max-width: 992px){
+	.container {
+		padding: 0 65px;
+	}
+}
 @media screen and (max-width: 500px){
 	.container {
 		padding: 0 15px;

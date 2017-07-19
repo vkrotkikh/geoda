@@ -1,11 +1,4 @@
 .form {
-	& .row {
-		margin: 0 -17px;
-	}
-	& .col.s6,
-	& .col.s12 {
-		padding: 0px 17px;
-	}
 	&.-icons {
 		& img {
 			position: absolute;
@@ -54,6 +47,9 @@
 			}
 		}
 		& .select-wrapper {
+			& input{
+				padding: 0 35px;
+			}
 			& span.caret {
 				right: inherit;
 				left: 15px;
@@ -105,16 +101,37 @@
 }
 @media screen and (max-width: 768px) {
 	.form {
-		& .col.s6,
-		& .col.s12 {
-			width: 100%;
-			margin-left: 0;
-		}
+
 		& .-submit {
 			& .btn {
 				width: 100%;
 				padding: 32px 20px;
 				height: auto;
+			}
+		}
+	}
+}
+@media screen and (max-width: 500px){
+	.form{
+		& input,
+		& textarea {
+			font-size: 18px !important;
+		}
+		& .input-field {
+			margin-bottom: 75px;
+			& label {
+				font-size: 18px;
+
+			}
+		}
+		& .select-wrapper{
+			& .dropdown-content.dropdown-content {
+
+				& li {
+					& span {
+						font-size: 18px;
+					}
+				}
 			}
 		}
 	}
