@@ -7,9 +7,21 @@
 		box-shadow: -4px 4px 0 rgba($primary-color, .2);
 	}
 
+	&.-additional {
+		background-color: $link-color;
+		color: #fff;
+	}
+
 	&.-lg {
 		padding: 24px 63px;
 		height: auto;
+		line-height: 1;
+	}
+
+	&.-xl {
+		height: auto;
+		padding: 25px 84px;
+		font-size: 31px;
 		line-height: 1;
 	}
 }
