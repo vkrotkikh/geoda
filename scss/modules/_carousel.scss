@@ -1,5 +1,5 @@
 .section-carousel {
-	padding-bottom: 70px;
+	padding-bottom: 50px;
 }
 
 .carousel-fullwidth {
@@ -52,14 +52,14 @@
 }
 
 .slick-dotted.slick-slider {
-	margin-bottom: 40px;
+	margin-bottom: 70px;
 }
 
 .slick-dots {
 	li {
 		button {
-			width: 14px;
-			height: 14px;
+			width: 18px;
+			height: 18px;
 			border-radius: 50%;
 			background-color: rgba($primary-color, .2);
 			
@@ -99,4 +99,8 @@
 
 		}
 	}
+}
+
+.slick-dots {
+	bottom: -35px;
 }
