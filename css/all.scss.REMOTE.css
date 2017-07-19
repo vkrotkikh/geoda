@@ -7184,53 +7184,6 @@ h1 {
   font-size: 20px;
   padding: 0 0 0 50px; }
 
-.clients .row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center; }
-
-.clients-main_title {
-  margin: 0;
-  margin-top: 50px;
-  margin-bottom: 35px; }
-
-.clients-item {
-  text-align: center;
-  margin-bottom: 35px; }
-
-.clients-img {
-  min-height: 183px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center; }
-  .clients-img img {
-    max-width: 100%;
-    height: auto; }
-
-.clients-title {
-  font-size: 18px;
-  text-align: center;
-  display: block;
-  color: #6d6e71;
-  font-family: 'OpenSansHebrewBold'; }
-
 *,
 *:focus,
 *:active,
@@ -7239,5 +7192,3 @@ h1 {
 
 body {
   min-width: 320px !important; }
-
-/*# sourceMappingURL=all.css.map */

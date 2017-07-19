@@ -4,11 +4,15 @@
 
 	li {
 		position: relative;
+		padding-left: 15px;
+		line-height: 1.7;
 
 		&:before {
 			content: ' • ';
-			display: inline-block;
-			margin-right: 10px;
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
 			color: $primary-color;
 		}
 	}
@@ -17,9 +21,12 @@
 [dir="rtl"] {
 	.list-simple {
 		li {
+			padding-left: 0;
+			padding-right: 15px;
+
 			&:before {
-				margin-right: 0;
-				margin-left: 10px;
+				left: auto;
+				right: 0;
 			}
 		}
 	}

@@ -312,6 +312,17 @@ h1 {
 	}
 }
 
+.home-article {
+	h2 {
+		font-family: $font-light;
+	}
+
+	.well {
+		max-width: 511px;
+		margin-top: 20px;
+	}
+}
+
 @media (max-width: 1300px) {
 	.bg-img01 {
 		background-size: 150% auto;
