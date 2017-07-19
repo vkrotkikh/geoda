@@ -1,6 +1,30 @@
 .section-top {
+
 	padding-top: 70px;
-	& h1 {
+	&.-contacts{
+		padding-top: 55px;
+	}
+	&.-about{
+		padding-top: 40px;
+		& img {
+			position: relative;
+    		right: -50px;
+		}
+		& h1 {
+		    margin-top: 5px;
+		    margin-bottom: 45px;
+		}
+		& .section-top_descr{
+			margin-bottom: 35px;
+		}
+	}
+	&.-newsletters{
+		padding-top: 40px;
+		& h1 {
+		    margin-top: 5px;
+    		margin-bottom: 32px;
+		}
+	}	& h1 {
 		margin: 40px 0;
 	}
 	& .img-wrapper {
