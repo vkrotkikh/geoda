@@ -1,0 +1,45 @@
+.section-category-home {
+	padding: 50px 0;
+
+	.h1 {
+		font-size: 50px;
+		line-height: 1.1;
+		margin: 30px 0 20px;
+	}
+
+	h5 {
+		color: $primary-color;
+	}
+
+	.list-simple {
+		font-size: 20px;
+	}
+}
+
+.home-article-header {
+	position: relative;
+
+	img {
+		display: block;
+	}
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 100px;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		height: 1px;
+		background-color: $primary-color;
+	}
+}
+
+.home-article-body {
+	.description {
+		max-width: 510px;
+		margin: 0;
+		font-size: 20px;
+	}
+}
