@@ -6375,6 +6375,9 @@ h1 {
     font-size: 20px;
     line-height: 26px; }
 
+[dir="rtl"] .row .col {
+  float: right !important; }
+
 *,
 *:focus,
 *:active,
