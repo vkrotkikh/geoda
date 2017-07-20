@@ -5875,7 +5875,7 @@ nav .nav-wrapper {
 @media screen and (max-width: 992px) {
   .header.-inner .logo_mobile {
     right: -10px; }
-  nav a.button-collapse {
+  .header nav a.button-collapse {
     left: -65px; } }
 
 @media screen and (max-width: 500px) {
