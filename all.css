@@ -7797,6 +7797,42 @@ nav ul.bold {
   }
 }
 
+.accordion {
+  padding: 0;
+  margin: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+}
+
+.accordion .collapsible-header {
+  padding: 34px 15px;
+  border-bottom: none;
+}
+
+.accordion .collapsible-header.active {
+  background-color: #f5fafc;
+}
+
+.accordion .collapsible-body {
+  border-bottom: none;
+  background-color: #f5fafc;
+  padding: 15px;
+}
+
+.accordion > li {
+  border-bottom: 1px solid #0194be;
+}
+
+.accordion .open {
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+.accordion .open:hover {
+  text-decoration: none;
+}
+
 .card-home {
   width: 100%;
   padding: 25px 50px;
@@ -8948,6 +8984,31 @@ h1 {
   color: #a4a4a5;
 }
 
+.file-upload-wrapper label {
+  margin: 0;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.file-upload-wrapper span {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  color: #28cff9;
+  padding-right: 25px;
+}
+
+.file-upload-wrapper span:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 19px;
+  height: 18px;
+  background: url(images/upload-icon.png) no-repeat 0 0;
+}
+
 [dir="rtl"] .form .input-field textarea {
   padding: 0;
   line-height: 45px;
@@ -9104,6 +9165,14 @@ h1 {
 .section-top.-pp-indent-infrastructure h1 {
   margin: 22px 0;
   line-height: 1.1;
+}
+
+.section-top.-pp-indent-jobs {
+  padding: 54px 0 45px;
+}
+
+.section-top.-pp-indent-jobs h1 {
+  margin: 35px 0 0;
 }
 
 @media screen and (max-width: 992px) {
@@ -9726,6 +9795,74 @@ h1 {
 
 .section-carousel.-clients {
   padding-bottom: 0;
+}
+
+.section-jobs {
+  padding: 0 0 100px;
+}
+
+.section-jobs .description {
+  max-width: 580px;
+}
+
+.section-jobs .form {
+  max-width: 840px;
+  margin: 50px auto 25px;
+}
+
+.section-jobs .form .btn, .section-jobs .form .btn-large {
+  height: 45px;
+  line-height: 45px;
+  padding: 0 45px;
+}
+
+.jobs-item {
+  padding: 0 0 75px;
+}
+
+.jobs-item h2 {
+  margin: 0 0 5px;
+}
+
+.jobs-item:last-child {
+  padding-bottom: 0;
+}
+
+.jobs-nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+}
+
+.jobs-nav li + li:before {
+  content: ' | ';
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  margin: 0 3px;
+}
+
+.jobs-nav li {
+  height: auto;
+}
+
+.jobs-nav a {
+  font-size: 22px;
+  vertical-align: middle;
+  color: #6d6e71;
+  -webkit-transition: color .15s;
+  -o-transition: color .15s;
+  transition: color .15s;
+}
+
+.jobs-nav a:hover {
+  color: #28cff9;
 }
 
 *,

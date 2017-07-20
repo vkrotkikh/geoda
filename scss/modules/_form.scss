@@ -36,6 +36,35 @@
 		}
 	}
 }
+
+.file-upload-wrapper {
+
+	label {
+		margin: 0;
+		display: inline-block;
+		cursor: pointer;
+	}
+
+	span {
+		position: relative;
+		display: block;
+		font-size: 18px;
+		color: $link-color;
+		padding-right: 25px;
+
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 5px;
+			right: 0;
+			width: 19px;
+			height: 18px;
+			background: url(images/upload-icon.png) no-repeat 0 0;
+		}
+	}
+}
+
 [dir="rtl"] {
 	.form {
 		& .input-field {
