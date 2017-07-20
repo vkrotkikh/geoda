@@ -1,107 +1,145 @@
 .section-top {
-
-	padding-top: 70px;
-	&.-contacts{
-		padding-top: 55px;
-	}
-	&.-about{
-		padding-top: 40px;
-		& img {
-			position: relative;
-    		right: -50px;
-		}
-		& h1 {
-		    margin-top: 5px;
-		    margin-bottom: 45px;
-		}
-		& .section-top_descr{
-			margin-bottom: 35px;
-		}
-	}
-	&.-newsletters{
-		padding-top: 40px;
-		& h1 {
-		    margin-top: 5px;
-    		margin-bottom: 32px;
-		}
-	}	& h1 {
-		margin: 40px 0;
-	}
-	& .img-wrapper {
-		padding: 0 100px;
-	}
-	& img {
-		max-width: 100%;
-	}
-	&_descr{
-		max-width: 1088px;
-		width: 100%;
-		margin: 0 auto;
-		text-align: right;
-		margin-bottom: 40px;
-		padding: 0 15px;
-		& p {
-			margin: 0;
-			font-size: 20px;
-			line-height: 26px;
-		}
-	}
-
-	&.-pp-indent-infrastructure {
-		padding-bottom: 40px;
-
-		h1 {
-			margin: 22px 0;
-			line-height: 1.1;
-		}
-	}
-
-	&.-pp-indent-jobs {
-		padding: 54px 0 45px;
-
-		h1 {
-			margin: 35px 0 0;
-		}
-	}
+    padding-top: 70px;
+    &.-contacts {
+        padding-top: 55px;
+    }
+    &.-about {
+        padding-top: 40px;
+        & img {
+            position: relative;
+            right: -50px;
+        }
+        & h1 {
+            margin-top: 5px;
+            margin-bottom: 45px;
+        }
+        & .section-top_descr {
+            margin-bottom: 35px;
+        }
+    }
+    &.-newsletters {
+        padding-top: 40px;
+        & h1 {
+            margin-top: 5px;
+            margin-bottom: 32px;
+        }
+    }
+    & h1 {
+        margin: 40px 0;
+    }
+    & .img-wrapper {
+        padding: 0 100px;
+    }
+    & img {
+        max-width: 100%;
+    }
+    &_descr {
+        max-width: 1088px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: right;
+        margin-bottom: 40px;
+        padding: 0 15px;
+        & p {
+            margin: 0;
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+    &.-pp-indent-infrastructure {
+        padding-bottom: 40px;
+        h1 {
+            margin: 22px 0;
+            line-height: 1.1;
+        }
+    }
+    &.-pp-indent-jobs {
+        padding: 54px 0 45px;
+        h1 {
+            margin: 35px 0 0;
+        }
+    }
 }
-@media screen and (max-width: 992px){
-	.section-top{
-		& h1 {
-			font-size: 90px;
-			line-height: 90px;
-		}
-		& .img-wrapper{
-			& img {
-				max-height: 400px;
-			}
-		}
 
-		&.-pp-indent-jobs {
-			padding: 200px 0 90px;
-
-			h1 {
-				margin-top: 60px;
-			}
-		}
-	}
+@media screen and (max-width: 992px) {
+    .section-top {
+        padding-top: 15px;
+        & h1 {
+            font-size: 90px;
+            line-height: 90px;
+        }
+        & .img-wrapper {
+            & img {
+                max-height: 400px;
+            }
+        }
+        &.-pp-indent-jobs {
+            padding: 200px 0 90px;
+            h1 {
+                margin-top: 60px;
+            }
+        }
+        & .section-top_descr {
+            padding: 0 65px;
+        }
+    }
+    .section-top {
+        &.-about {
+            padding-top: 24px;
+            & h1 {
+                margin-top: 55px;
+                margin-bottom: 22px;
+            }
+            & .section-top_descr {
+                & p {
+                    font-size: 24px;
+                    line-height: 38px;
+                }
+            }
+            & .img-wrapper {
+                padding: 0 5px;
+                & img {
+                    position: static;
+                }
+            }
+        }
+        &.-newsletters {
+            padding-top: 15px;
+        }
+    }
 }
-@media screen and (max-width: 500px){
-	.section-top{
-		& h1 {
-			padding: 0 15px;
-			font-size: 50px;
-			line-height: 50px;
-		}
-		& .img-wrapper{
-			padding: 0 50px;
-			& img {
-				max-height: 300px;
-			}
-		}
-		&_descr{
-			& p {
-				font-size: 16px;
-			}
-		}
-	}
+
+@media screen and (max-width: 500px) {
+    .section-top {
+        & h1 {
+            padding: 0 15px;
+            font-size: 50px;
+            line-height: 50px;
+        }
+        & .img-wrapper {
+            padding: 0 50px;
+            & img {
+                max-height: 300px;
+            }
+        }
+        &_descr {
+            padding: 0 15px;
+            & p {
+                font-size: 18px;
+                line-height: 18px;
+            }
+        }
+    }
+    .section-top {
+        &.-about {
+            padding-top: 40px;
+            & img {
+                right: 0px;
+            }
+            & h1 {
+                margin-top: 5px;
+                margin-bottom: 45px;
+            }
+        }
+    }
 }
