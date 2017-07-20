@@ -196,17 +196,6 @@ nav {
 	.side-nav{
 		width: 100%;
 	}
-}
-@media screen and (max-width: 500px){
-	.side-nav{
-		& ul {
-
-		}
-		& a {
-			font-size: 18px;
-			padding: 20px 15px;
-		}
-	}
 
 	.brand-logo {
 		&.change-on-mobile {
@@ -234,6 +223,17 @@ nav {
 				order: 2;
 				font-size: 28px;
 			}
+		}
+	}
+}
+@media screen and (max-width: 500px){
+	.side-nav{
+		& ul {
+
+		}
+		& a {
+			font-size: 18px;
+			padding: 20px 15px;
 		}
 	}
 }
