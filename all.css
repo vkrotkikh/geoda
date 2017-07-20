@@ -3175,7 +3175,7 @@ nav {
   nav .nav-wrapper {
     position: relative;
     height: 100%; }
-  @media only screen and (min-width: 993px) {
+  @media screen and (min-width: 1200px) {
     nav a.button-collapse {
       display: none; } }
   nav .button-collapse {
@@ -3199,7 +3199,7 @@ nav {
       -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
       transform: translateX(-50%); }
-    @media only screen and (max-width: 992px) {
+    @media screen and (max-width: 1200px) {
       nav .brand-logo {
         left: 50%;
         -webkit-transform: translateX(-50%);
@@ -3289,7 +3289,7 @@ nav {
   .navbar-fixed nav {
     position: fixed; }
 
-@media only screen and (min-width: 601px) {
+@media screen and (min-width: 1200px) {
   nav.nav-extended .nav-wrapper {
     min-height: 53px; }
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
@@ -5710,15 +5710,45 @@ nav {
   box-shadow: none; }
   nav .brand-logo {
     display: block;
-    right: 15px;
+    right: -2px;
     color: #6d6e71; }
   nav .nav-wrapper {
     padding-right: 120px; }
   nav ul {
-    padding: 0; }
+    padding: 0;
+    position: relative;
+    margin-right: 9px; }
+    nav ul.-brd_rt:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 1px;
+      height: 20px;
+      margin-top: -10px;
+      background-color: #6d6e71; }
+    nav ul.-brd_all li:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 1px;
+      height: 20px;
+      margin-top: -10px;
+      background-color: #6d6e71; }
+    nav ul.-brd_all a {
+      padding: 0 15px; }
+    nav ul.-brd_all .btn, nav ul.-brd_all .btn-large {
+      min-width: 120px;
+      margin: -3px 3px 0 0px; }
+    nav ul.-brd_bot {
+      border-bottom: 1px solid #0194be; }
     nav ul a {
       font-size: 18px;
       color: #6d6e71;
+      padding: 0 9px;
       -webkit-transition: all .2s;
       -o-transition: all .2s;
       transition: all .2s; }
@@ -5727,16 +5757,6 @@ nav {
         color: #0194be; }
     nav ul li {
       position: relative; }
-      nav ul li:before {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: 1px;
-        height: 20px;
-        margin-top: -10px;
-        background-color: #6d6e71; }
       nav ul li:last-child:before, nav ul li:nth-last-child(2):before {
         display: none; }
     nav ul .btn, nav ul .btn-large {
@@ -5761,14 +5781,37 @@ nav {
   font-family: "SFCompactUltralight", sans-serif;
   vertical-align: middle; }
 
-.side-nav li {
-  float: none !important; }
+.side-nav {
+  padding: 0;
+  background: initial;
+  padding-bottom: 200px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5); }
+  .side-nav_inner {
+    background: #fff; }
+  .side-nav li {
+    float: none !important; }
+    .side-nav li a {
+      -webkit-transition: all .35s;
+      -o-transition: all .35s;
+      transition: all .35s;
+      padding: 42px 65px;
+      font-size: 30px;
+      line-height: 30px;
+      min-height: 124px; }
+      .side-nav li a:hover {
+        -webkit-transition: all .35s;
+        -o-transition: all .35s;
+        transition: all .35s;
+        background: rgba(1, 148, 190, 0.05); }
+  .side-nav ul {
+    margin: 0; }
 
 @media (max-width: 1300px) {
   nav ul a {
     font-size: 16px; } }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   nav {
     height: auto;
     position: relative; }
@@ -5788,7 +5831,16 @@ nav {
       nav a.button-collapse i {
         height: auto;
         font-size: 44px;
-        line-height: 142px; } }
+        line-height: 142px; }
+    nav .hide-on-med-and-down {
+      display: none; }
+  .side-nav {
+    width: 100%; } }
+
+@media screen and (max-width: 500px) {
+  .side-nav a {
+    font-size: 18px;
+    padding: 20px 15px; } }
 
 .btn, .btn-large {
   font-size: 18px; }

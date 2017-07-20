@@ -117,9 +117,24 @@
         //// materialize select
 
         $('select').material_select();
+
+        // materialize modal
+
         $('#modal_worker_1').modal({
             dismissible: true,
         });
+        // home page scroll down
+        $('#js_scroll_section_simple').on('click' , function(){
+            $('html, body').animate({
+                scrollTop: $(".section-simple").offset().top
+            }, 1250);
+        });
+        $('#js_scroll_card').on('click' , function(){
+            $('html, body').animate({
+                scrollTop: $(".section-home-card").offset().top + 150
+            }, 1250);
+        });
+
     });
 
     function slickInit() {

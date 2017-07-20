@@ -36,7 +36,7 @@ nav {
     height: 100%;
   }
 
-  @media #{$large-and-up} {
+  @media screen and (min-width: 1200px) {
     a.button-collapse { display: none; }
   }
 
@@ -70,7 +70,7 @@ nav {
       transform: translateX(-50%);
     }
 
-    @media #{$medium-and-down} {
+    @media screen and (max-width: 1200px) {
       left: 50%;
       transform: translateX(-50%);
 
@@ -195,7 +195,7 @@ nav {
     position: fixed;
   }
 }
-@media #{$medium-and-up} {
+  @media screen and (min-width: 1200px) {
   nav.nav-extended .nav-wrapper {
     min-height: $navbar-height;
   }
