@@ -3,6 +3,10 @@
 	
 	.description {
 		max-width: 580px;
+		& p {
+			margin: 0;
+			font-size: 20px;
+		}
 	}
 
 	.form {
@@ -15,6 +19,14 @@
 			padding: 0 45px;
 		}
 	}
+	& .accordion .collapsible-header.active{
+		padding-bottom: 0;
+	}
+	& .textarea{
+		& .input-field{
+			margin-bottom: 55px;
+		}
+	}
 }
 
 .jobs-item {
@@ -22,6 +34,11 @@
 
 	h2 {
 		margin: 0 0 5px;
+	}
+	& .-link_color{
+		& a {
+			color: $primary-color;
+		}
 	}
 
 	&:last-child {
@@ -58,4 +75,7 @@
 			color: $link-color;
 		}
 	}
+}
+@media screen and (max-width: 992px){
+	
 }

@@ -351,6 +351,11 @@ h1 {
 
 	.section-top-home {
 		padding: 50px 0;
+		padding-top: 330px;
+		& h1 {
+			font-size: 100px;
+			margin-top: 38px;
+		}
 	}
 
 	.section-home-card {
@@ -370,6 +375,11 @@ h1 {
 					padding: 25px 0;
 				}
 			}
+		}
+		& p {
+		    margin: 9px 0 15px;
+		    font-size: 24px;
+		    line-height: 38px;
 		}
 	}
 

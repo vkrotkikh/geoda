@@ -160,15 +160,24 @@
 		}
 		&-info{
 			&_box{
-				padding: 40px 50px;
+			    padding-top: 71px;
+			    padding-right: 80px;
+			    padding-left: 40px;
+			    padding-bottom: 45px;
 
+			}
+			&_item{
+				margin-bottom: 25px;
 			}
 
 		}
 		&-form{
 			&_box{
-				padding: 40px 50px;
+				padding: 80px 50px;
 			}
+		}
+		& .input-field.input-field{
+			margin-bottom: 82px;
 		}
 	}
 }

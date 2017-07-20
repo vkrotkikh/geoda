@@ -126,12 +126,19 @@
 @media (max-width: 992px) {
 	.carousel-fullwidth {
 		.img-wrapper {
+			padding-bottom: 720px;
 			.caption {
 				bottom: auto;
-				top: 15px;
-				right: 30px;
+			    top: 30px;
+				right: -3px;
 			}
 		}
+		& .img-description{
+			padding: 26px 0;
+		}
+	}
+	.slick-dotted.slick-slider{
+		margin-bottom: 60px;
 	}
 
 	.slick-dots {

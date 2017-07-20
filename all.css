@@ -5874,7 +5874,7 @@ nav .nav-wrapper {
 
 @media screen and (max-width: 992px) {
   .header.-inner .logo_mobile {
-    right: -45px; }
+    right: -10px; }
   nav a.button-collapse {
     left: -65px; } }
 
@@ -6149,10 +6149,16 @@ nav .nav-wrapper {
   bottom: -35px; }
 
 @media (max-width: 992px) {
-  .carousel-fullwidth .img-wrapper .caption {
-    bottom: auto;
-    top: 15px;
-    right: 30px; }
+  .carousel-fullwidth .img-wrapper {
+    padding-bottom: 720px; }
+    .carousel-fullwidth .img-wrapper .caption {
+      bottom: auto;
+      top: 30px;
+      right: -3px; }
+  .carousel-fullwidth .img-description {
+    padding: 26px 0; }
+  .slick-dotted.slick-slider {
+    margin-bottom: 60px; }
   .slick-dots {
     bottom: 176px; }
     .slick-dots li button {
@@ -6420,13 +6426,21 @@ h1 {
   .section-simple .content-wrapper {
     padding: 30px 0 0; }
   .section-top-home {
-    padding: 50px 0; }
+    padding: 50px 0;
+    padding-top: 330px; }
+    .section-top-home h1 {
+      font-size: 100px;
+      margin-top: 38px; }
   .section-home-card {
     padding: 50px 0; }
   .section-home-categories.-contant .content-header {
     text-align: center; }
   .section-home-categories.-contant .home-category.-pp-indent-01, .section-home-categories.-contant .home-category.-pp-indent-02, .section-home-categories.-contant .home-category.-pp-indent-03 {
     padding: 25px 0; }
+  .section-home-categories p {
+    margin: 9px 0 15px;
+    font-size: 24px;
+    line-height: 38px; }
   .home-category {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -6592,7 +6606,7 @@ h1 {
     text-align: right;
     border-left: none;
     padding-left: 0;
-    padding-bottom: 35px;
+    padding-bottom: 30px;
     margin-bottom: 20px;
     border-bottom: 1px solid #dbdbdd; }
   .footer-social_list, .footer-certificate, .footer-designed {
@@ -6604,7 +6618,9 @@ h1 {
 
 @media screen and (max-width: 992px) {
   .footer .container {
-    padding: 40px 65px; }
+    padding: 40px 65px;
+    padding-bottom: 50px;
+    padding-top: 35px; }
   .footer-designed {
     margin-right: 20px;
     margin-top: 20px; } }
@@ -6831,9 +6847,16 @@ h1 {
   .contacts-map {
     min-height: 400px; }
   .contacts-info_box {
-    padding: 40px 50px; }
+    padding-top: 71px;
+    padding-right: 80px;
+    padding-left: 40px;
+    padding-bottom: 45px; }
+  .contacts-info_item {
+    margin-bottom: 25px; }
   .contacts-form_box {
-    padding: 40px 50px; } }
+    padding: 80px 50px; }
+  .contacts .input-field.input-field {
+    margin-bottom: 82px; } }
 
 @media screen and (max-width: 700px) {
   .contacts-info_item {
@@ -6967,7 +6990,7 @@ h1 {
 @media screen and (max-width: 768px) {
   .form .-submit .btn, .form .-submit .btn-large {
     width: 100%;
-    padding: 32px 20px;
+    padding: 23px 20px;
     height: auto; } }
 
 @media screen and (max-width: 500px) {
@@ -7050,7 +7073,13 @@ h1 {
       .section-top.-about .img-wrapper img {
         position: static; }
   .section-top.-newsletters {
-    padding-top: 15px; } }
+    padding-top: 15px; }
+    .section-top.-newsletters h1 {
+      margin-top: 35px; }
+  .section-top.-archive h1 {
+    margin-bottom: 25px; }
+  .section-top.-pp-indent-jobs h1 {
+    margin-bottom: 20px; } }
 
 @media screen and (max-width: 500px) {
   .section-top h1 {
@@ -7374,6 +7403,8 @@ h1 {
     margin-bottom: 55px; }
     .newsletters.-archive {
       margin-top: 0; }
+    .newsletters.-single {
+      margin-bottom: 60px; }
     .newsletters-filter {
       text-align: center;
       max-width: 80%;
@@ -7513,6 +7544,9 @@ h1 {
   padding: 0 0 100px; }
   .section-jobs .description {
     max-width: 580px; }
+    .section-jobs .description p {
+      margin: 0;
+      font-size: 20px; }
   .section-jobs .form {
     max-width: 840px;
     margin: 50px auto 25px; }
@@ -7520,11 +7554,17 @@ h1 {
       height: 45px;
       line-height: 45px;
       padding: 0 45px; }
+  .section-jobs .accordion .collapsible-header.active {
+    padding-bottom: 0; }
+  .section-jobs .textarea .input-field {
+    margin-bottom: 55px; }
 
 .jobs-item {
   padding: 0 0 75px; }
   .jobs-item h2 {
     margin: 0 0 5px; }
+  .jobs-item .-link_color a {
+    color: #0194be; }
   .jobs-item:last-child {
     padding-bottom: 0; }
 
