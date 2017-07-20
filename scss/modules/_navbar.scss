@@ -4,7 +4,7 @@ nav {
 
 	.brand-logo {
 		display: block;
-		right: 15px;
+		right: -2px;
 		color: $navbar-font-color;
 	}
 
@@ -14,10 +14,51 @@ nav {
 
 	ul {
 		padding: 0;
+		position: relative;
+		margin-right: 9px;
+		&.-brd_rt{
+			&:after{
+				content: '';
+				display: block;
+				position: absolute;
+				top: 50%;
+				right: 0;
+				width: 1px;
+				height: 20px;
+				margin-top: -10px;
+				background-color: #6d6e71;
+			}
+		}
+		&.-brd_all{
+			& li {
+				&:before {
+					content: '';
+					display: block;
+					position: absolute;
+					top: 50%;
+					left: 0;
+					width: 1px;
+					height: 20px;
+					margin-top: -10px;
+					background-color: #6d6e71;
+				}
+			}
+			& a {
+				padding: 0 15px;
+			}
+			& .btn{
+			    min-width: 120px;
+    			margin: -3px 3px 0 0px;
+			}
+		}
+		&.-brd_bot{
+			border-bottom: 1px solid $primary-color;
+		}
 
 		a {
 			font-size: 18px;
 			color: $navbar-font-color;
+			padding: 0 9px;
 			transition: all .2s;
 
 			&:hover {
@@ -30,15 +71,15 @@ nav {
 			position: relative;
 
 			&:before {
-				content: '';
-				display: block;
-				position: absolute;
-				top: 50%;
-				left: 0;
-				width: 1px;
-				height: 20px;
-				margin-top: -10px;
-				background-color: #6d6e71;
+				// content: '';
+				// display: block;
+				// position: absolute;
+				// top: 50%;
+				// left: 0;
+				// width: 1px;
+				// height: 20px;
+				// margin-top: -10px;
+				// background-color: #6d6e71;
 			}
 
 			&:last-child,
@@ -81,8 +122,30 @@ nav {
 }
 
 .side-nav {
+	padding: 0;
+	background: initial;
+	padding-bottom: 200px;
+	height: 100%;
+	background: rgba(255,255,255 , 0.5);
+	&_inner{
+		background: #fff;
+	}
 	li {
 		float: none !important;
+		& a {
+			transition: all .35s;
+			padding: 42px 65px;
+		    font-size: 30px;
+		    line-height: 30px;
+		    min-height: 124px;	
+			&:hover{
+				transition: all .35s;	
+				background: rgba(1,148,190 , .05);
+			}
+		}
+	}
+	& ul{
+		margin: 0;
 	}
 }
 
@@ -96,7 +159,7 @@ nav {
 	}
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
 	nav {
 		height: auto;
 		position: relative;
@@ -125,6 +188,23 @@ nav {
 				font-size: 44px;
 				line-height: 142px;
 			}
+		}
+		& .hide-on-med-and-down{
+			display: none;
+		}
+	}
+	.side-nav{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 500px){
+	.side-nav{
+		& ul {
+
+		}
+		& a {
+			font-size: 18px;
+			padding: 20px 15px;
 		}
 	}
 
