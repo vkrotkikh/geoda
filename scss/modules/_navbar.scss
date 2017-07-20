@@ -1,3 +1,6 @@
+.header{
+	position: relative;
+}
 nav {
 	background-color: transparent;
 	box-shadow: none;
@@ -10,6 +13,9 @@ nav {
 
 	.nav-wrapper {
 		padding-right: 120px;
+	}
+	& a.button-collapse{
+		z-index: 1000;
 	}
 
 	ul {
@@ -53,6 +59,11 @@ nav {
 		}
 		&.-brd_bot{
 			border-bottom: 1px solid $primary-color;
+		}
+		&.-brd_bot_each{
+			& li {
+				border-bottom: 1px solid $primary-color;
+			}
 		}
 
 		a {
@@ -98,6 +109,13 @@ nav {
 			font-family: $font-bold;
 		}
 	}
+	& .logo_mobile{
+		display: none;
+		& img {
+			max-width: 85px;
+			max-height: 80px;
+		}
+	}
 }
 
 .brand-logo {
@@ -124,9 +142,10 @@ nav {
 .side-nav {
 	padding: 0;
 	background: initial;
-	padding-bottom: 200px;
+	padding-bottom: 100px;
 	height: 100%;
-	background: rgba(255,255,255 , 0.5);
+    z-index: 999;
+    box-shadow: none;
 	&_inner{
 		background: #fff;
 	}
@@ -149,6 +168,11 @@ nav {
 	}
 }
 
+
+nav .nav-wrapper{
+	height: auto;
+}
+
 @media (max-width: 1300px) {
 	nav {
 		ul {
@@ -160,6 +184,29 @@ nav {
 }
 
 @media (max-width: 1200px) {
+	.header{
+		&.-inner{
+			min-height: 130px;
+			& .nav-wrapper{
+				padding: 0;
+			}
+			& .logo_mobile{
+			    display: block;
+			    position: absolute;
+			    top: 30px;
+			    right: 20px;
+			}
+			& nav{
+				& a.button-collapse {
+						width: 130px;
+						height: 130px;
+						i {
+							line-height: 130px;
+						}
+					}
+			}
+		}
+	}
 	nav {
 		height: auto;
 		position: relative;
@@ -168,7 +215,10 @@ nav {
 		// top: 0;
 		// left: 0;
 		// right: 0;
-
+		& .logo_mobile{
+			display: block;
+			position: absolute;
+		}
 		.brand-logo {
 			left: auto;
 			right: 0;
@@ -178,14 +228,15 @@ nav {
 		a.button-collapse {
 			position: absolute;
 			top: 0;
-			left: 0;
+			left: -15px;
 			width: 142px;
 			height: 142px;
 			text-align: center;
+			margin: 0;
 
 			i {
 				height: auto;
-				font-size: 44px;
+				font-size: 70px;
 				line-height: 142px;
 			}
 		}
@@ -197,7 +248,43 @@ nav {
 		width: 100%;
 	}
 }
+@media screen and (max-width: 992px){
+	.header{
+		&.-inner{
+			& .logo_mobile{
+			    right: -45px;
+			}
+
+		}
+	}
+	nav{
+		& a.button-collapse {
+
+			left: -65px;
+		}
+	}
+}
 @media screen and (max-width: 500px){
+	.header{
+		&.-inner{
+			& .logo_mobile{
+			    right: 15px;
+			    & img {
+		    	    max-width: 75px;
+    				max-height: 70px;
+			    }
+			}
+		}
+	}
+	nav{
+		& a.button-collapse {
+
+			left: -15px;
+			& i {
+				font-size: 50px;
+			}
+		}
+	}
 	.side-nav{
 		& ul {
 
