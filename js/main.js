@@ -151,4 +151,10 @@
         }
     }
 
+    function materializeAccordion() {
+        $('.collapsible-header').click(function(e) {
+            
+        });
+    }
+
 })(jQuery);

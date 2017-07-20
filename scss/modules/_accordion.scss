@@ -1,0 +1,34 @@
+.accordion {
+	padding: 0;
+	margin: 0;
+	box-shadow: none;
+	border: none;
+
+	.collapsible-header {
+		padding: 34px 15px;
+		border-bottom: none;
+
+		&.active {
+			background-color: #f5fafc;
+		}
+	}
+
+	.collapsible-body {
+		border-bottom: none;
+		background-color: #f5fafc;
+		padding: 15px;
+	}
+
+	> li {
+		border-bottom: 1px solid $primary-color;
+	}
+
+	.open {
+		font-size: 22px;
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}

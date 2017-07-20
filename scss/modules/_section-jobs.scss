@@ -1,0 +1,61 @@
+.section-jobs {
+	padding: 0 0 100px;
+	
+	.description {
+		max-width: 580px;
+	}
+
+	.form {
+		max-width: 840px;
+		margin: 50px auto 25px;
+
+		.btn {
+			height: 45px;
+			line-height: 45px;
+			padding: 0 45px;
+		}
+	}
+}
+
+.jobs-item {
+	padding: 0 0 75px;
+
+	h2 {
+		margin: 0 0 5px;
+	}
+
+	&:last-child {
+		padding-bottom: 0;
+	}
+}
+
+.jobs-nav {
+	display: flex;
+	align-items: center;
+	padding: 0;
+
+	li + li {
+		&:before {
+			content: ' | ';
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 1;
+			margin: 0 3px;
+		}
+	}
+
+	li {
+		height: auto;
+	}
+
+	a {
+		font-size: 22px;
+		vertical-align: middle;
+		color: $navbar-font-color;
+		transition: color .15s;
+
+		&:hover {
+			color: $link-color;
+		}
+	}
+}
