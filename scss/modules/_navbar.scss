@@ -202,9 +202,15 @@ nav {
 		& ul {
 
 		}
-		& a {
-			font-size: 18px;
-			padding: 20px 15px;
+		& li {
+			& a {
+				font-size: 18px;
+				padding: 20px 15px;
+				min-height: 0;
+				height: initial;
+				line-height: 18px;
+			}
+			
 		}
 	}
 
