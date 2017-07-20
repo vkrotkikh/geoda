@@ -97,3 +97,24 @@
 		margin: 0 0 20px;
 	}
 }
+
+@media (max-width: 992px) {
+	.home-article {
+		padding-bottom: 30px;
+
+		&.-pp-indent-01,
+		&.-pp-indent-02,
+		&.-pp-indent-03,
+		&.-pp-indent-04 {
+			padding-bottom: 30px;
+			margin-bottom: 0;
+		}
+	}
+
+	.home-article-body {
+		.col {
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+	}
+}

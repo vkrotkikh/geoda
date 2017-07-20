@@ -5,6 +5,7 @@
 .carousel-fullwidth {
 	.img-wrapper {
 		position: relative;
+		padding-bottom: 610px;
 
 		img {
 			display: block;
@@ -37,9 +38,23 @@
 		box-shadow: 0 5px 15px -5px rgba($primary-color, .5);
 		margin-bottom: 20px;
 	}
+
 	& .slick-prev, .slick-next{
 		padding-bottom: 106px;
 	} 
+
+	.img-item {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
 }
 
 .slick-prev,
@@ -106,4 +121,26 @@
 
 .slick-dots {
 	bottom: -35px;
+}
+
+@media (max-width: 992px) {
+	.carousel-fullwidth {
+		.img-wrapper {
+			.caption {
+				bottom: auto;
+				top: 15px;
+				right: 30px;
+			}
+		}
+	}
+
+	.slick-dots {
+		bottom: 70px + 106px;
+
+		li {
+			button {
+				background-color: rgba(#fff, .6);
+			}
+		}
+	}
 }
