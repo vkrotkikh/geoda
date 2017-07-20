@@ -7547,6 +7547,11 @@ h1 {
     .section-jobs .description p {
       margin: 0;
       font-size: 20px; }
+    .section-jobs .description a {
+      font-size: 22px;
+      margin-top: 15px;
+      display: inline-block;
+      text-decoration: underline; }
   .section-jobs .form {
     max-width: 840px;
     margin: 50px auto 25px; }
@@ -7595,6 +7600,10 @@ h1 {
     transition: color .15s; }
     .jobs-nav a:hover {
       color: #28cff9; }
+
+@media screen and (max-width: 992px) {
+  .section-jobs .accordion .collapsible-header.active {
+    padding-bottom: 20px; } }
 
 *,
 *:focus,
