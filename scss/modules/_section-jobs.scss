@@ -89,10 +89,46 @@
 			padding-bottom: 20px;
 		}
 		& .form{
-			
+			    margin: 33px auto 25px;
+			    & .input-field{
+			    	margin-bottom: 90px;
+			    }
 		}
 		& .file-upload-wrapper{
-			
+			text-align: center;
+			margin-bottom: 42px;
+			& span{
+				font-size: 22px;
+				&:after{
+				    top: 10px;
+    				right: -6px;
+				}
+
+			}
+		}
+		& .-submit{
+			 & .btn{
+			 	display: block;
+			 	max-width: 470px;
+			 	width: 100%;
+			 	margin: 0 auto;
+			 	padding: 16px 20px;
+			 	height: initial;
+			 }
+		}
+		& .-textarea{
+			& .input-field{
+				margin-bottom: 77px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 600px){
+	.jobs{
+		&-item{
+			& .collapsible-header{
+				display: block;
+			}
 		}
 	}
 }
